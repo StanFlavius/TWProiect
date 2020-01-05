@@ -1,0 +1,169 @@
+input[type=text]{
+    width: 25%;
+    padding: 2px 5px;
+    margin: 8px;
+    background-color: #bbbb77;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    border-color: #1f1f14;
+    background-color: #222211;
+    color: white;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #bbbb77;
+}
+
+.insertProblem {
+    border-radius: 5px;
+    background-color: #444422;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.getProblem {
+    border-radius: 5px;
+    background-color: #444422;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.editProblem {
+    border-radius: 5px;
+    background-color: #444422;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.deleteProblem {
+    border-radius: 5px;
+    background-color: #444422;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.deleteButton{
+    width: 60px;
+    background-color: #bbbb77;
+    margin-bottom: 3px;
+}
+
+button:hover {
+    background-color: #bbbb77;
+}
+
+form{
+    background-color: transparent;
+}
+
+form label{
+    background-color: transparent;
+}
+
+button{
+    width: 100%;
+    border-color: #1f1f14;
+    background-color: #222211;
+    color: white;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pb{
+    background-color: white !important;
+}
+
+#templateProblem{
+    background-color:  #77773c !important;
+    display: flex;
+    margin: 10px;
+    align-items: flex-end;
+}
+
+.thingProblem{
+    background-color: #bbbb77;
+    text-align: center;
+    margin: 10px;
+    border: #444422;
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.textSolved{
+    background-color: transparent;
+    margin-bottom: 12px;
+}
+
+a{
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header{
+        flex-direction: column;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .Calendar{
+        height: 1100px;
+    }
+
+    .templateProblem{
+        flex-direction: column;
+    }
+
+    .contact-text{
+        font-size: 20px;
+    }
+
+    .single-contact {
+        flex-direction: column;
+    }
+
+    .single-contact p{
+        font-size: 20px;
+    }
+
+    .single-contact i{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+    form {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    form {
+        width: 70%;
+    }
+}

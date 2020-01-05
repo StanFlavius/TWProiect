@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CALENDAR</title>
+  <link rel="stylesheet" href="style_calendar.css">
+    <link rel="stylesheet" href="style_home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="name">AlgoHUB</div>
+    <nav>
+        <div class="navLI"> <a href="home.html">Home</a> </div>
+        <div class="navLI"> <a href="calendar.html">Calendar</a> </div>
+        <div class="navLI"> <a href="problems.html">Problems</a> </div>
+    </nav>
+</header>
+    
+    <article class="Calendar">
+        <h1> A </h1>
+        <div class="calendar disable-selection" id="calendar">
+                    
+                    <div class="left-side">
+                        <div class="current-day text-center">
+                            <h1 class="calendar-left-side-day"> A </h1>
+                            <div class="calendar-left-side-day-of-week"></div>
+                        </div>
+                        <div class="current-day-events">
+                            <div>Current Events:</div>
+                            <ul class="current-day-events-list"></ul>
+                        </div>
+                        <div class="add-event-day">
+                            <input type="text" class="add-event-day-field" placeholder="Create an Event">
+                            <span class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"></span>
+                        </div>
+                    </div>
+                    <div class="right-side" >
+                        <div class="text-right calendar-change-year" style="background: blue;">
+                            <div class="calendar-change-year-slider">
+                                <span class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"></span>
+                                <span class="calendar-current-year"></span>
+                                <span class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"></span>
+                            </div>
+                        </div>
+                        <div class="calendar-month-list">
+                            <ul class="calendar-month"></ul>
+                        </div>
+                        <div class="calendar-week-list">
+                            <ul class="calendar-week"></ul>
+                        </div>
+                        <div class="calendar-day-list">
+                            <ul class="calendar-days"></ul>
+                        </div>
+                    </div>
+            
+        </div>
+        <script src="js_calendar.js"></script>
+    </article>
+
+    <article class="contact">
+        <h1> A </h1>
+        <div class="contact-text">CONTACT</div>
+        <div class="content">
+            <div class="single-contact">
+                <i class="fa fa-envelope fa-5x"></i>
+                <p>flaviusstefanstan@yahoo.com</p>
+                <i class="fa fa-phone fa-5x"></i>
+                <p>0123456789</p>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <p>Stan Flavius Stefan</p>
+    </footer>
+</body>
+</html>

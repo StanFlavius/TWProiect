@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROBLEMS</title>
+    <link rel="stylesheet" href="style_calendar.css">
+    <link rel="stylesheet" href="insertProblem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="name">AlgoHUB</div>
+    <nav>
+        <div class="navLI"> <a href="home.html">Home</a> </div>
+        <div class="navLI"> <a href="calendar.html">Calendar</a> </div>
+        <div class="navLI"> <a href="problems.html">Problems</a> </div>
+    </nav>
+</header>
+
+<article class="Calendar">
+        <h1> A </h1>
+        <div class="insertProblem">
+            <form action="/action_page.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" placeholder="Name of the problem...">
+
+                <label for="link">Link</label>
+                <input type="text" id="link" name="Link" placeholder="Link of the problem...">
+
+                <label for="difficulty">Difficulty</label>
+                <input type="text" id="difficulty" name="Difficulty" placeholder="Difficulty of the problem...">
+
+                <button type="button" onclick="addThings()">Insert Problem</button>
+            </form>
+        </div>
+
+        <div class="getProblem">
+            <form>
+                <label for="name">Select Difficulty</label>
+                <input type="text" id="inputDiff" name="Name" placeholder="Difficulty...">
+
+                <button type="button" onclick="retrieveProblems()">Get Problems</button>
+            </form>
+        </div>
+
+        <div class="editProblem">
+            <form>
+                <label for="name">Add name</label>
+                <input type="text" id="putName" name="Name" placeholder="Name...">
+                <label for="name">Add new difficulty</label>
+                <input type="text" id="putDiff" name="Name" placeholder="New difficulty...">
+
+                <button type="button" onclick="editProblem()">Edit Problem</button>
+            </form>
+        </div>
+
+        <div class="deleteProblem">
+            <form>
+                <label for="name">Add name</label>
+                <input type="text" id="deleteName" name="Name" placeholder="Name...">
+
+                <button type="button" onclick="deleteProblem()">Delete Problem</button>
+            </form>
+        </div>
+
+        <div id = "pb" style="background-color: white">
+
+        </div>
+</article>
+
+<article class="contact">
+    <h1> A </h1>
+    <div class="contact-text">CONTACT</div>
+    <div class="content">
+        <div class="single-contact">
+            <i class="fa fa-envelope fa-5x"></i>
+            <p>flaviusstefanstan@yahoo.com</p>
+            <i class="fa fa-phone fa-5x"></i>
+            <p>0123456789</p>
+        </div>
+    </div>
+</article>
+
+<footer>
+    <p>Stan Flavius Stefan</p>
+</footer>
+
+<template>
+        <div class="templateProblem" id = "templateProblem">
+            <div class="thingProblem" id="templateName">Name</div>
+            <div class="thingProblem" id="templateLink"><a href=""> </a></div>
+            <div class="thingProblem" id="templateDifficulty">Difficulty</div>
+            <button class="deleteButton" id="deleteButton" ONCLICK="deleteDiv()"> Remove Problem </button>
+        </div>
+</template>
+
+<script src="script.js"></script>
+<script src="js_calendar.js"></script>
+</body>
+
+</html>
+
